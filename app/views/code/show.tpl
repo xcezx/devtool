@@ -17,7 +17,7 @@ Create <time datetime="{{ code_pack.created }} UTC+0000"></time>
 </pre>
 
 {% for code in codes %}
-<pre><code class={{ code.class }}>{{ code.code }}</code></pre>
+<pre><code class="prettyprint linenums">{{ code.code }}</code></pre>
 {% endfor %}
 
 {% endblock %}
