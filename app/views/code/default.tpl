@@ -1,10 +1,18 @@
 {% extends "layouts/default.tpl" %}
 
 {% block js %}
+{#
 <script src="{{ url('js/code.js') }}"></script>
 <link rel="stylesheet" href="{{ url('highlight/styles/github.css') }}">
 <script src="{{ url('highlight/highlight.pack.js') }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+#}
+
+<link rel="stylesheet" href="{{ url('google-code-prettify/prettify.css') }}">
+<script src="{{ url('google-code-prettify/prettify.js') }}"></script>
+<script>
+$(function() { prettyPrint(); });
+</script>
 {% endblock %}
 
 
